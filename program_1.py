@@ -6,7 +6,7 @@
 
 
 def kilometer_conversion(kilometers):
-    miles = kilometers * 0.6214
+    miles = kilometers * .62137119
 
 
     # Return the variable to the calling function
@@ -24,4 +24,4 @@ if __name__ == '__main__':
     miles = kilometer_conversion(kilometers)
 
     # Display the miles
-    print(f'Your distance in miles is: {miles:.2f} miles')
+    print(f'Your distance in miles is: {miles:.5f} miles')

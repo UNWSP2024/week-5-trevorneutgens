@@ -1,31 +1,24 @@
 # Program #1: Kilometer Converter
-# Write a program that asks the user to enter a distance in kilometers, 
-# then converts that distance to miles.  The conversion formula is as follows:  
-# Miles = kilometers x 0.6214.   
+# Write a program that asks the user to enter a distance in kilometers,
+# then converts that distance to miles.  The conversion formula is as follows:
+# Miles = kilometers x 0.6214.
 # The conversion must be done as a function with input and output.
 
 
 def kilometer_conversion(kilometers):
-    """Convert kilometers to miles using the conversion factor."""
-    miles: float = kilometers * 0.621371
-    return miles  # Return the converted miles
+    miles = kilometers * 0.6214
 
+
+    # Return the variable to the calling function
+    return miles
+
+#### This piece of the code has been done for you,
+#### you only need to worry about the actual temp
+#### conversion logic in the temp_conversion function
 if __name__ == '__main__':
     # Get User Input
-    print('Kilometer to Miles Converter')
-
-    while True:
-        try:
-            kilometers = float(input("Enter distance in kilometers: "))
-            if kilometers < 0:
-                print("Please enter a non-negative number.")
-                continue  # Prompt again if the input is negative
-            break  # Exit the loop if the input is valid
-        except ValueError:
-            print("Invalid input. Please enter a number.")  # Handle invalid inputs
-
+    print('in main')
     # Call kilometer_conversion
-    miles = kilometer_conversion(kilometers)
-
-    # Display the miles with 5 decimal precision
-    print(f'Your distance in miles is: {miles:.5f} miles')
+    miles = kilometer_conversion(float(input("Enter distance in kilometers: ")))
+    # Display the miles
+    print(f'you distance in miles is: {miles:.5f} miles')

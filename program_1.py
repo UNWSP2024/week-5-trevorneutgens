@@ -22,4 +22,4 @@ if __name__ == '__main__':
     # Call kilometer_conversion
     miles = kilometer_conversion(float(input("Enter distance in kilometers: ")))
     # Display the miles
-    print(f'you distance in miles is: {miles:.2f} miles')
+    print(f'Your distance in miles is: {miles:.}')

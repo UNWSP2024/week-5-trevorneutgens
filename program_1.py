@@ -24,4 +24,4 @@ if __name__ == '__main__':
     miles = kilometer_conversion(kilometers)
 
     # Display the miles
-    print(f'Your distance in miles is: {miles:.5f} miles')
+    print(f'Your distance in miles is: {miles} miles')

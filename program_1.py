@@ -18,7 +18,9 @@ def kilometer_conversion(kilometers):
 if __name__ == '__main__':
     # Get User Input
     print('in main')
+    kilometers = float(input("Enter distance in kilometers: "))
     # Call kilometer_conversion
-    miles = kilometer_conversion(float(input("Enter distance in kilometers: ")))
+    miles = kilometer_conversion(kilometers)
+
     # Display the miles
-    print(f'you distance in miles is: {miles:.5f} miles')
+    print(f'Your distance in miles is: {miles:.5f} miles')

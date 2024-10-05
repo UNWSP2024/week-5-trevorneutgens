@@ -14,7 +14,7 @@ def give_problem():
 def calculate_answer(answer, first_addition, second_addition):
     correct_answer = first_addition + second_addition  # Correctly calculate the answer
     if answer == correct_answer:
-        print("Congratulations! That's correct.")
+        print("congratulations")
     else:
         print(f"The correct answer is: {correct_answer}")  # Print the correct answer
 
